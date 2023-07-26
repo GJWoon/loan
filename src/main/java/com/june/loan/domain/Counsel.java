@@ -50,4 +50,8 @@ public class Counsel extends BaseEntity{
     @Column(columnDefinition = "varchar(5) COMMENT '우편 번호'")
     private String zipCode;
 
+    public void setAppliedAt(){
+        this.appliedAt = LocalDateTime.now();
+    }
+
 }
